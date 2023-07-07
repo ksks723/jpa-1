@@ -14,9 +14,10 @@ public class JpaMain {
        tx.begin();
        try{
           Member member = new Member();
-          member.setId(2L);
-          member.setName("HelloB");
-          em.persist(member);
+          member.setId(100L);
+          member.setName("helloJPA");
+
+          em.persist(member);//여기서 영속상태가된다.
 
           tx.commit();
        } catch (Exception e){

@@ -7,6 +7,8 @@ import javax.persistence.Id;
 public class Member {
     @Id
     private Long id;
+    private String name;
+
 
     public Long getId() {
         return id;
@@ -24,5 +26,5 @@ public class Member {
         this.name = name;
     }
 
-    private String name;
+
 }
